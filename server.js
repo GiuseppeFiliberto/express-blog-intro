@@ -32,6 +32,27 @@ const blogPosts = [
         img: `/images/cracker_barbabietola.jpeg`,
         tags: ["tag-1", "tag-2", "tag-3"]
     },
+    {
+        id: 3,
+        title: "Title 3",
+        body: "This is the post content with some text",
+        img: `/images/pane_fritto_dolce.jpeg`,
+        tags: ["tag-1", "tag-2", "tag-3"]
+    },
+    {
+        id: 4,
+        title: "Title 4",
+        body: "This is the post content with some text",
+        img: `/images/pasta_barbabietola.jpeg`,
+        tags: ["tag-1", "tag-2", "tag-3"]
+    },
+    {
+        id: 5,
+        title: "Title 5",
+        body: "This is the post content with some text",
+        img: `/images/torta_paesana.jpeg`,
+        tags: ["tag-1", "tag-2", "tag-3"]
+    },
 ]
 
 app.get ('/bacheca', (req, res) => {
