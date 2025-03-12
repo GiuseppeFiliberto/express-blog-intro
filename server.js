@@ -16,3 +16,24 @@ app.get('/', (req, res) => {
     res.send('<h1> Server del mio Blog</h1>');
 
 })
+
+const blogPosts = [
+    {
+        id: 1,
+        title: "Title 1",
+        body: "This is the post content with some text",
+        img: `/images/ciambellone.jpeg`,
+        tags: ["tag-1", "tag-2", "tag-3"]
+    },
+    {
+        id: 2,
+        title: "Title 2",
+        body: "This is the post content with some text",
+        img: `/images/cracker_barbabietola.jpeg`,
+        tags: ["tag-1", "tag-2", "tag-3"]
+    },
+]
+
+app.get ('/bacheca', (req, res) => {
+    res.json(blogPosts);
+})
