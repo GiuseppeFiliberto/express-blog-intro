@@ -10,13 +10,14 @@ app.listen(port, () =>{
     console.log(`Server is running on port http://localhost:${port}`);
 })
 
-
+//  main route
 app.get('/', (req, res) => {
 
     res.send('<h1> Server del mio Blog</h1>');
 
 })
 
+//post list + its route
 const blogPosts = [
     {
         id: 1,
@@ -54,6 +55,7 @@ const blogPosts = [
         tags: ["tag-1", "tag-2", "tag-3"]
     },
 ]
+
 
 app.get ('/bacheca', (req, res) => {
     res.json(blogPosts);
